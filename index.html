@@ -1,8 +1,37 @@
 <html>
-	<head><title>Eliezer Pearl</title></head>
+	<head>
+		<title>Eliezer Pearl</title>
+		<style>
+			body {
+				margin: 0;
+				min-height: 100vh;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: linear-gradient(#855988 0%, #6b4984 20%, #483475 40%, #2b2f77 60%, #141852 80%, #070b34 100%);
+			}
+
+			.cloud {
+				width: 120px;
+				height: 120px;
+				border-radius: 50%;
+				background: #fff;
+				box-shadow:
+					-80px  20px 0 -20px #fff,
+					-45px   5px 0  -5px #fff,
+					 50px  10px 0 -10px #fff,
+					 80px  25px 0 -25px #fff;
+				animation: drift 40s linear infinite;
+			}
+
+			@keyframes drift {
+				from { transform: translateX(calc(-50vw - 180px)); }
+				to   { transform: translateX(calc( 50vw + 180px)); }
+			}
+		</style>
+	</head>
 	<body>
-		<h1>Hello world</h1>
+		<h1 class="cloud">hi</div>
 	</body>
 </html>
-
-<!-- test -->
